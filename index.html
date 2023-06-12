@@ -1,3 +1,66 @@
-<a href="Python_Tutorial.html">Chapter 1</a>
-<a href="https://colab.research.google.com/drive/1FvNYTi95pPoqR_U-ifc9vYLlVFONwy8U?authuser=5">Chapter 2 Practice</a>
-<a href="Pandas.html">Chapter 2</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python Tutorial</title>
+  <style>
+    /* Add some basic styling to make it visually appealing */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    .tab {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function openTab(tabName) {
+      // Hide all the tabs
+      var tabs = document.getElementsByClassName("tab");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+      }
+      
+      // Show the selected tab
+      document.getElementById(tabName).style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <h1 style="text-align: center;">Python Tutorial</h1>
+  <img src="https://www.dremendo.com/python-programming-tutorial/images/python-programming-tutorial.jpg" alt="Python Tutorial Image" style="display: block; margin: 0 auto;">
+
+  <br><br>
+
+  <button onclick="openTab('tab1')">Tab 1</button>
+  <button onclick="openTab('tab2')">Tab 2</button>
+  <button onclick="openTab('tab3')">Tab 3</button>
+  <button onclick="openTab('tab4')">Tab 4</button>
+  
+  <div id="tab1" class="tab">
+    <h2>Python Tutorial</h2>
+    <a href="Python_Tutorial.html">Chapter 1: Python Tutorial</a>
+  </div>
+  
+  <div id="tab2" class="tab">
+    <h2>Python Tutorial Drive Link</h2>
+    <a href="https://colab.research.google.com/drive/1MomjoDlVmWNzarO9mS3GtjrrpwsWChdk">Chapter 1: Drive Link</a>
+  </div>
+  
+  <div id="tab3" class="tab">
+    <h2>Pandas Tutorial</h2>
+    <a href="Pandas.html">Chapter 2: Pandas Tutorial</a>
+  </div>
+  
+  <div id="tab4" class="tab">
+    <h2>Pandas Practice</h2>
+    <a href="https://colab.research.google.com/drive/1FvNYTi95pPoqR_U-ifc9vYLlVFONwy8U?authuser=5">Chapter 2: Pandas Practice</a>
+  </div>
+  
+  <script>
+    // Show the first tab by default
+    document.getElementById("tab1").style.display = "block";
+  </script>
+</body>
+</html>
